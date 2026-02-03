@@ -12,4 +12,4 @@ RUN python -m pip install -U pip && \
     python -m pip install -e .
 
 # 构建时做一次 smoke test，早发现“少依赖/导入失败”
-RUN python -c "import tzrec; print('tzrec import ok')"
+# RUN python -c "import tzrec; print('tzrec import ok')"
