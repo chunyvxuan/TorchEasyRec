@@ -25,7 +25,7 @@ from tzrec.protos.models import multi_task_rank_pb2
 from tzrec.utils.config_util import config_to_kwargs
 
 
-class DBMTL(MultiTaskRank):
+class yxTestDBMTL(MultiTaskRank):
     """Deep Bayesian Multi-Target Learning model.
 
     Args:
