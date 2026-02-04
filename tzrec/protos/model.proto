@@ -75,6 +75,8 @@ message ModelConfig {
         YxTestDBMTL2 yx_test_dbmtl2 = 1002;
 
         YxTestDBMTL3 yx_test_dbmtl3 = 1003;
+
+        YxTestDBMTL4 yx_test_dbmtl4 = 1004;
     }
 
     optional uint32 num_class = 2 [default = 1];
