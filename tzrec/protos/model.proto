@@ -71,6 +71,8 @@ message ModelConfig {
         RocketLaunching rocket_launching = 500;
 
         YxTestDBMTL yx_test_dbmtl = 1001;
+
+        YxTestDBMTL2 yv_test_dbmtl2 = 1002;
     }
 
     optional uint32 num_class = 2 [default = 1];
