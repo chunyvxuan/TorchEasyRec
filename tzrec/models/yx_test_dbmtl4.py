@@ -43,11 +43,16 @@ class YxTestDBMTL4(MultiTaskRank):
         sample_weights: Optional[List[str]] = None,
         **kwargs: Any,
     ) -> None:
+        # super().__init__(model_config, features, labels, sample_weights, **kwargs)
+        # assert model_config.WhichOneof("model") == "dbmtl", (
+        #     "invalid model config: %s" % self._model_config.WhichOneof("model")
+        # )
+        # assert isinstance(self._model_config, multi_task_rank_pb2.DBMTL)
+
         super().__init__(model_config, features, labels, sample_weights, **kwargs)
-        assert model_config.WhichOneof("model") == "dbmtl", (
-            "invalid model config: %s" % self._model_config.WhichOneof("model")
-        )
-        assert isinstance(self._model_config, multi_task_rank_pb2.DBMTL)
+        which = model_config.WhichOneof("model")
+        assert which == "yx_test_dbmtl4", f"invalid model config: {which}"
+        assert isinstance(self._model_config, multi_task_rank_pb2.YxTestDBMTL4)
 
         self._task_tower_cfgs = self._model_config.task_towers
         self.init_input()
