@@ -34,7 +34,7 @@ message DBMTL {
     repeated BayesTaskTower task_towers = 5;
 }
 
-message yxTestDBMTL {
+message YxTestDBMTL {
     // shared bottom MaskNet module
     optional MaskNetModule mask_net = 6;
     // shared bottom mlp layer
