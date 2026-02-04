@@ -72,7 +72,9 @@ message ModelConfig {
 
         YxTestDBMTL yx_test_dbmtl = 1001;
 
-        YxTestDBMTL2 yv_test_dbmtl2 = 1002;
+        YxTestDBMTL2 yx_test_dbmtl2 = 1002;
+
+        YxTestDBMTL3 yx_test_dbmtl3 = 1003;
     }
 
     optional uint32 num_class = 2 [default = 1];
